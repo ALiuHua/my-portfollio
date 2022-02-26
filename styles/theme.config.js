@@ -5,7 +5,7 @@ export const lightTheme = {
   primaryColor: "#fefaf6", //main color
   secondaryColor: "#232320", //for text
   accentColor: "#ffc4ff", //fpr decoratioin
-  testColor: "red",
+  textColor: "#656270",
 };
 
 //all the elements can got theme arguments, so we can use this to set color
@@ -32,6 +32,11 @@ body{
     font-size:1.6rem;
     color:${({ theme }) => theme.secondaryColor};
     background-color:${({ theme }) => theme.primaryColor}
+}
+p{
+    font-size: 2rem;
+    font-weight: 500;
+    color:${({ theme }) => theme.textColor}
 }
 a {
     color: inherit;

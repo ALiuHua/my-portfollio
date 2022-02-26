@@ -6,7 +6,9 @@ import { Main } from "./LayoutElement";
 const Layout = ({ children }) => {
   return (
     <>
-      <Head></Head>
+      <Head>
+        <title>my portfolio</title>
+      </Head>
       <Navbar />
       <Main>{children}</Main>
       {/* <Footer /> */}
