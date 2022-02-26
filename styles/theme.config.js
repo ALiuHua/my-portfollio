@@ -2,13 +2,13 @@ import { createGlobalStyle } from "styled-components";
 //lightTheme is variable
 //using ,
 export const lightTheme = {
-  primaryColor: "red", //main color
-  //   primaryColor: "#fefaf6", //main color
+  primaryColor: "#fefaf6", //main color
   secondaryColor: "#232320", //for text
-  accentColor: "ffc4ff", //fpr decoratioin
+  accentColor: "#ffc4ff", //fpr decoratioin
+  testColor: "red",
 };
 
-//body can got theme arguments, so we can use this to set color
+//all the elements can got theme arguments, so we can use this to set color
 //GlobalStyles is kind of component using ;
 export const GlobalStyles = createGlobalStyle`
 *,
@@ -26,7 +26,7 @@ html{
 
 }
 body{
-    font-family:"sans-serif";
+    font-family:'Roboto',sans-serif;
     font-weight:400;
     line-height:1.6;
     font-size:1.6rem;
