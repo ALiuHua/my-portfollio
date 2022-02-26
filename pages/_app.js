@@ -1,4 +1,4 @@
-import Navbar from "../components/Navbar";
+import Layout from "../components/Layout";
 import { ThemeProvider } from "styled-components";
 import { lightTheme, GlobalStyles } from "../styles/theme.config";
 
@@ -6,8 +6,9 @@ function MyApp({ Component, pageProps }) {
   return (
     <ThemeProvider theme={lightTheme}>
       <GlobalStyles />
-      <Navbar />
-      <Component {...pageProps} />
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
     </ThemeProvider>
   );
 }

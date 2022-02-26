@@ -1,35 +1,31 @@
-import { NavContainer } from "./NavbarElements";
+import {
+  NavContainer,
+  HeaderContainer,
+  SocialIcon,
+  NavLogo,
+} from "./NavbarElements";
 import { NavLinkComponent } from "./NavLinkComponent";
-import { useState } from "react";
-import { useRouter } from "next/router";
 const Navbar = () => {
-  const router = useRouter();
-  const [colorState, setColorState] = useState("red");
-  const handler = () => {
-    setColorState("green");
-    console.log("runinh");
-  };
   return (
-    <NavContainer>
-      <NavLinkComponent
-        name={"about"}
-        href={"/about"}
-        className={router.pathname === "/" ? "active" : ""}
-      />
-      <NavLinkComponent
-        name={"contact us"}
-        href={"/contact"}
-        marginRight={"auto"}
-        color={colorState}
-        onNavigation={handler}
-        className={router.pathname === "/" ? "active" : ""}
-      />
-      <NavLinkComponent
-        name={"something new"}
-        href={"/new"}
-        className={router.pathname === "/" ? "active" : ""}
-      />
-    </NavContainer>
+    <HeaderContainer>
+      <NavContainer>
+        <NavLinkComponent name={"Project"} href={"/project"} />
+        <NavLinkComponent name={"Contact"} href={"/contact"} />
+        <NavLinkComponent name={"About"} href={"/about"} marginRight="auto" />
+        <NavLinkComponent href={"/"} position="absolute">
+          <NavLogo src="/icons/vercel.svg" />
+        </NavLinkComponent>
+
+        <NavLinkComponent href={"https://github.com/ALiuHua"}>
+          <SocialIcon src="/icons/github.svg"></SocialIcon>
+          <span>Github</span>
+        </NavLinkComponent>
+        <NavLinkComponent href={"https://github.com/ALiuHua"}>
+          <SocialIcon src="/icons/linkedin.svg"></SocialIcon>
+          <span>LinkedIn</span>
+        </NavLinkComponent>
+      </NavContainer>
+    </HeaderContainer>
   );
 };
 
