@@ -6,6 +6,7 @@ export const AbsolutePositionCenter = css`
   left: 50%;
   transform: translate(-50%, -50%);
 `;
+
 // this Mixins was used in Navbar
 //import { AbsolutePositionCenter } from "../../styles/Mixins";
 //export const NavList = styled.li`
