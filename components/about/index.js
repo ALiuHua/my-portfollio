@@ -1,4 +1,5 @@
 import React from "react";
+import { Container } from "../../styles/Container.styled";
 import { FlexContainer } from "../../styles/FlexContainer.styled";
 import { HeadingPrimary, HeadingSecondary } from "../../styles/Typo.Elements";
 import { ImageWrapper } from "./About.Elements";
@@ -6,6 +7,14 @@ const About = () => {
   return (
     <>
       <section>
+        <Container textAlign="center">
+          <HeadingPrimary>About me</HeadingPrimary>
+          <p>
+            Hello! My name is Andy Liu, a self-taught front-end developer living
+            in sydney.
+          </p>
+        </Container>
+
         <FlexContainer>
           <ImageWrapper>
             <img src="./images/about/mails.png" alt="mail" />

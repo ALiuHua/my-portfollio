@@ -29,18 +29,22 @@ body{
     font-family:'Roboto',sans-serif;
     font-weight:400;
     line-height:1.6;
-    font-size:1.6rem;
+    font-size:2rem;
     color:${({ theme }) => theme.secondaryColor};
     background-color:${({ theme }) => theme.primaryColor}
 }
 p{
-    font-size: 2rem;
-    font-weight: 500;
     color:${({ theme }) => theme.textColor}
 }
 a {
     color: inherit;
     text-decoration: none;
+  }
+  
+li{
+
+    list-style:none;
+    color:${({ theme }) => theme.textColor};
   }
 input,textarea,button {
 

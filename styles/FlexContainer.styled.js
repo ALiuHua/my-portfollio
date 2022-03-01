@@ -4,7 +4,7 @@ export const FlexContainer = styled.div`
   flex-direction: ${({ layout }) => (layout ? layout : "row")};
   align-items: center;
   &:not(:last-child) {
-    margin-bottom: 8rem;
+    margin-bottom: 10rem;
   }
   img {
     display: block;
