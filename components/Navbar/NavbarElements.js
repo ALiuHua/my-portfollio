@@ -24,10 +24,6 @@ export const NavList = styled.li`
   margin-right: ${({ marginRight }) => marginRight};
 `;
 export const NavLink = styled.a`
-  color: ${(props) => props.color};
-  font-size: 2rem;
-  font-weight: 600;
-
   display: flex;
   align-items: center;
   &:link,
@@ -38,11 +34,15 @@ export const NavLink = styled.a`
     margin-bottom: -3.5px;
     border-bottom: 3.5px solid ${({ theme }) => theme.accentColor};
   }
+  // &.active {
+  //   color: red;
+  // }
+  //create active style for the page router
 `;
 
 export const SocialIcon = styled.img`
-  width: 2.2rem;
-  height: 2.2rem;
+  width: 1.8rem;
+  height: 1.8rem;
   display: inlin-block;
   margin-right: 0.5rem;
 `;

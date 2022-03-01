@@ -23,10 +23,24 @@ const Navbar = () => {
           <NavLinkComponent
             name={pathname !== "/" ? "Home" : "Project"}
             href={pathname !== "/" ? "/" : "/project"}
+            // className={pathname === "/" ? "active" : ""}
           />
-          <NavLinkComponent name={"Contact"} href={"/contact"} />
-          <NavLinkComponent name={"About"} href={"/about"} marginRight="auto" />
-          <NavLinkComponent href={"/"} position="absolute">
+          <NavLinkComponent
+            name={"Contact"}
+            href={"/contact"}
+            // className={pathname === "/contact" ? "active" : ""}
+          />
+          <NavLinkComponent
+            name={"About"}
+            href={"/about"}
+            marginRight="auto"
+            // className={pathname === "/about" ? "active" : ""}
+          />
+          <NavLinkComponent
+            href={"/"}
+            position="absolute"
+            // className={pathname === "/" ? "active" : ""}
+          >
             <NavLogo src="/icons/vercel.svg" />
           </NavLinkComponent>
           <NavLinkComponent href={"https://github.com/ALiuHua"}>
